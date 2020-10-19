@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+
+.label {
+  display: inline;
+  color: #ff8ae2;
+  margin-left: 5rem;
+}
+
+body {
+  color: #fff;
+  background-color: #183d5d;
+}
+
+body span {
+  font-size: x-large;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.grid .square {
+  width: 15vw;
+  height: 20vh;
+  border: solid #93c2db 2px;
+  background-color: #072540;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.grid .square:hover {
+  background-color: #0b3458bd;
+}
+
+.mole {
+  background-image: url(../images/mole1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */
