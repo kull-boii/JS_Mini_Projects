@@ -3,30 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
+      <nav>
+        <button class="restart">Again!</button>
+        <h3>(Between 1 and 20)</h3>
+      </nav>
     </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="app.js"></script>
+    <h1 class="title">Guess The Number!</h1>
+    <div class="number">?</div>
+    <hr />
+    <div class="container">
+      <div class="div1">
+        <input type="number" id="int" min="0" max="20" />
+        <button class="check">Check!</button>
+      </div>
+      <div class="div2">
+        <h2 class="message">Start Guessing...</h2>
+        <div class="score-board">
+          <h3>💯 Score : <span id="current-score">20</span></h3>
+          <h3>🥇 Highscore: <span id="high-score">0</span></h3>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="app.js"></script>
 </html>
