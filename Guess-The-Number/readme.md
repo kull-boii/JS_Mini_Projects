@@ -17,6 +17,6 @@ email, or any other method with the owners of this repository before making a ch
 
 
 # Live Preview 🔴
-[Click Here](https://kull-boii.github.io/JS_Mini_Projects//Wack-A-Mole/)
+[Click Here](https://kull-boii.github.io/JS_Mini_Projects/Guess-The-Number/)
 
 
