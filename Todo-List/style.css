@@ -172,7 +172,7 @@ select {
     width: 18rem;
   }
   select.filter-todo {
-    width: 5rem;
+    width: 10rem;
   }
   .todo {
     width: 20rem;
