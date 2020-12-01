@@ -23,11 +23,11 @@ header {
 }
 
 header > h1 {
-  min-height: 20vh;
   text-align: center;
 }
 
-form {
+form,
+header > h1 {
   min-height: 20vh;
   display: flex;
   justify-content: center;
@@ -147,4 +147,38 @@ select {
 .select:hover::after {
   color: #fff;
   background-color: #f59761;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 95%;
+  }
+  form {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .todo-input,
+  .todo-button {
+    padding: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .todo-input {
+    width: 18rem;
+  }
+  select.filter-todo {
+    width: 5rem;
+  }
+  .todo {
+    width: 20rem;
+    font-size: 20px;
+  }
+  li.todo-item {
+    padding: 5px;
+  }
 }
