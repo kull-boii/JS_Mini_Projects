@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Sansita Swashed", cursive;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.author_name {
+  text-align: center;
+
+  line-height: 90vh;
+  /* 100vh takes up the whole screen */
+  font-size: 3rem;
+}
+
+/* animation 1  */
+
+span {
+  display: inline-block;
+
+  opacity: 0;
+
+  transform: translateY(50px);
+  transition: all 2s ease;
+}
+
+span.fade {
+  color: #bc6ff1;
+
+  text-decoration: underline;
+  text-decoration-color: #f6f5f1;
+
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* or */
+/* animation 2  */
+
+/* span {
+  transition: all 0.5s ease;
+}
+
+span.fade {
+  color: rgb(255, 90, 186);
+} */
