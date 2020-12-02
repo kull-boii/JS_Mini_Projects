@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect Ctrl c+v</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Detect Ctrl c + Ctrl v</h1>
+      <label for="area1">Copy</label>
+      <textarea id="area1" cols="30" rows="10" placeholder="">
+Sample Text... Copy this </textarea
+      >
+      <label for="area2">Paste</label>
+      <textarea
+        id="area2"
+        cols="30"
+        rows="10"
+        placeholder="Paste here..."
+      ></textarea>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
+
+<!-- Tl;DR
+    <input type="text" onkeydown="if(event.ctrlKey && event.keyCode==86){return false;}" name="txt">
+ -->
